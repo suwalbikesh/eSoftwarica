@@ -28,12 +28,16 @@ public class NotificationsFragment extends Fragment {
         webView = root.findViewById(R.id.webView);
 
         WebSettings webSettings = webView.getSettings();
-        webSettings.setJavaScriptEnabled(true);
-        webSettings.setAllowContentAccess(true);
-        webSettings.setAppCacheEnabled(true);
+
         webSettings.setDomStorageEnabled(true);
         webSettings.setUseWideViewPort(true);
         webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
+
+        webSettings.setAppCacheEnabled(true);
+        webSettings.setCacheMode(webSettings.LOAD_CACHE_ELSE_NETWORK);
+        webSettings.setJavaScriptEnabled(true);
+        webSettings.setLoadWithOverviewMode(true);
+        webSettings.setAllowFileAccess(true);
 
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl("https://www.softwarica.edu.np/");
