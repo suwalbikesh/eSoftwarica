@@ -19,11 +19,13 @@
     <EditText
         android:id="@+id/etEmail"
         android:inputType="textEmailAddress"
+        android:hint="Enter your Email"
         style="@style/LoginStyle" />
 
     <EditText
         android:id="@+id/etPassword"
         android:inputType="textPassword"
+        android:hint="Enter your Password"
         style="@style/LoginStyle" />
 
     <Button
