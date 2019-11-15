@@ -42,7 +42,7 @@ public class StudentAdapter extends RecyclerView.Adapter<StudentAdapter.Students
         holder.txtAddress.setText(studentsData.getAddress());
         holder.txtGender.setText(studentsData.getGender());
         if (studentsData.getGender().equals("Male")){
-            holder.circledataimg.setImageResource(R.drawable.male);
+            holder.circledataimg.setImageResource(R.drawable.male1);
         }
         else if (studentsData.getGender().equals("Female")){
             holder.circledataimg.setImageResource(R.drawable.female);
